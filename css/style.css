@@ -1,0 +1,151 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative; 
+     top: 0; 
+    
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(56, 52, 52);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1; 
+    opacity: 0.7;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+
+    color: rgb(253, 250, 250);
+    display: block;
+    padding: 3px 22px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+#navbar ul li a:hover{
+
+    color: rgb(2, 2, 2);
+   background-color: white;
+}
+
+
+
+
+
+/* Navigation Bar:logo and image  */
+#logo{
+    margin: 10px 34px;
+}
+
+
+#logo img{
+    height: 62px;
+    margin: 3px 5px;
+}
+
+/* Navigation Bar : list styling  */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg.jpg') no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* top: 0px;
+    left: 0px; */
+    z-index: -1; 
+    opacity: 0.5;
+    
+    
+}
+#home h1{
+    color: rgb(119, 11, 11);
+    text-align: center;
+}
+#home p{
+    color: rgb(91, 187, 231);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+/* Utility Classes  */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+#aboutus{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 171px;
+    margin: 214px 30px;
+    height: 475px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#aboutus h1{
+    font-size: 3rem;
+    text-align: center ;
+}
+
+#aboutus p{
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 1.5rem;
+}
+#aboutus::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 1351px;
+    height: 447px;
+    
+    z-index: -1; 
+    opacity: 0.5;
+}
